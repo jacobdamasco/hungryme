@@ -1,0 +1,187 @@
+body {
+    margin: 0px;
+    background: #bbd46dff;
+}
+
+p { font-size: 24px; }
+
+/* base.html css elements */
+.navbar {
+    background: #91b500ff;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.navbar a:link, .navbar a:visited {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+/* index.html css elements*/
+.descriptions {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.descriptions h1 {
+    margin: 100px 0px 25px 0px;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+}
+
+.descriptions p {
+    margin:0px;
+    font-weight: 400; 
+    color: white;  
+}
+
+.search {
+    padding: 35px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 450px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+}
+
+.search-bar ::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+}
+
+.search-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* result.html css elements */
+.split {
+    font-family: 'Montserrat', sans-serif;
+    height:93%;
+    width: 50%;
+    position: fixed;
+    bottom:0;
+    background-color: white;
+}
+
+.left {
+    left:0;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.mid { margin: 25px; }
+
+.mid .ingredient, .mid p { font-size: 16px; } 
+
+.ingredient {
+    list-style-type: none;
+    margin: 5px 0px 5px 0px;
+}
+
+.full-recipe a:link, .full-recipe a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.full-recipe a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.recipe-btn a:link, .recipe-btn a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin: 75px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.recipe-btn a:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    margin: 75px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.right { right:0; }
+
+.right img {
+    width: 575px;
+    max-width: 100%;
+    height:auto;
+}
+
+.img-center { text-align: center; }
+
+/* result_error.html css elements */
+.error {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0px 250px 0px 250px;
+}
+
+.error h1 {
+    font-size: 48px;
+    font-weight: 700;
+    padding: 15px 0px 15px 0px;
+}
+
+.search-container {
+    text-align: center;
+    margin: auto;
+    width: 250px;
+}
+
+.search-container a:link, .search-container a:visited {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    height: 35px;
+    width: 150px;
+    text-decoration: none;
+    color: black;
+}
+
+.search-container a:hover {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}

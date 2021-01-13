@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} HungryMe {% endblock %}
+
+
+{% block content %}
+<div class="error">
+    <h1>! Error !</h1>
+    <p>Your search was not found, or the API has reached its maximum number of hits. Click below to search another different food.
+    </p>
+</div>
+
+<div class="search-container">
+    <a href="{{ url_for('index') }}" class="search-again"> Search Again</a>
+</div>
+{% endblock%}

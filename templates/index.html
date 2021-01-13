@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} HungryMe {% endblock %}
+
+{% block content %}
+<div class="descriptions">
+    <h1>HungryMe</h1>
+    <p>Helping you find what to eat when you don’t know what to eat. Type in a food below.</p>
+</div>
+
+<div class="search">
+    <form method="POST" action="#">
+        <div class="search-bar">
+            <input type="text" name="food" placeholder="  Search  " required>
+        </div>
+        <!-- insert span with image of magnifying glass search thing-->
+        <br><br>
+        <div>
+            <input type="submit" value="Search" class="search-btn">
+        </div>
+    </form>
+</div>
+{% endblock %}

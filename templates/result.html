@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} HungryMe {% endblock %}
+
+{% block content %}
+<div class="split left">
+    <div class="top">
+        <h1 class="recipe-name"> {{ name }} </h1>
+    </div>
+    
+    <div class="mid">
+        <p> Calories: {{ cals }}</p>
+        <h4>Ingredients</h4>
+        {% for item in ingredients %}
+        <li class="ingredient">{{ item }}</li>
+        {% endfor %}
+        <br>
+        <p class="full-recipe"><a href="{{ link }}">Click <b>here</b> to get the full recipe.</a></p>
+    </div>
+    
+    <div class="recipe-btn">
+        <br><br>
+        <a href="./{{ searched_food }}"> Get Another Recipe</a>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="img-center">
+        <img src="{{ img }}" alt="{{ name }}">
+    </div>
+</div>
+{% endblock %}
